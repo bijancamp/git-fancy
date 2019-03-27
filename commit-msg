@@ -5,13 +5,14 @@ import subprocess
 import sys
 
 
+def get_emoji(code: str) -> str:
+    args = ['git', 'config', '-f', '.fancyconfig', f'emoji.{code}']
+
+    return subprocess.run(args, stdout=subprocess.PIPE, check=True,
+                          encoding='utf-8').stdout[:-1]  # leaves out "\n"
+
+
 def replace_codes(text: str) -> str:
-    def get_emoji(code: str) -> str:
-        args = ['git', 'config', '-f', '.fancyconfig', f'emoji.{code}']
-
-        return subprocess.run(args, stdout=subprocess.PIPE, check=True,
-                              encoding='utf-8').stdout[:-1]  # leaves out "\n"
-
     return re.sub(r':(?P<code>[a-zA-Z0-9_+-]+):',
                   lambda match: get_emoji(match.group('code')),
                   text)
