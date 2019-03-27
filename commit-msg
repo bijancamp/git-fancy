@@ -9,7 +9,7 @@ def get_emoji(code: str) -> str:
     args = ['git', 'config', '-f', '.fancyconfig', f'emoji.{code}']
 
     return subprocess.run(args, stdout=subprocess.PIPE, check=True,
-                          encoding='utf-8').stdout[:-1]  # leaves out "\n"
+                          encoding='utf-8').stdout[:-1]  # drops trailing "\n"
 
 
 def replace_codes(text: str) -> str:
