@@ -4,9 +4,27 @@ import re
 import subprocess
 import sys
 
+from pathlib import Path
+
+CONFIG_NAME = '.fancyconfig'
+CONFIG_PATHS = [path for path
+                in [Path.home() / CONFIG_NAME,
+                    Path(CONFIG_NAME)]
+                if path.is_file()]
+
 
 def get_emoji(code: str) -> str:
-    args = ('git', 'config', '-f', '.fancyconfig', f'emoji.{code}')
+    for config_path in CONFIG_PATHS:
+        try:
+            return run_git_config(config_path, f'emoji.{code}')
+        except subprocess.CalledProcessError:
+            continue
+
+    raise RuntimeError(f"could not retrieve emoji for :{code}:")
+
+
+def run_git_config(config_path: Path, name: str) -> str:
+    args = ('git', 'config', '-f', config_path, name)
 
     return subprocess.run(args, stdout=subprocess.PIPE, check=True,
                           encoding='utf-8').stdout[:-1]  # drops trailing "\n"
