@@ -5,3 +5,7 @@ codes. Since it's just a
 can use any tool to compose your emoji-charged commit messages, and
 since each emoji code gets translated to Unicode, your commit messages
 will look great in any Unicode-aware environment.
+
+## Installation
+Copy [commit-msg](commit-msg) to your hooks directory (by default, the
+`.git/hooks` directory of a repository).
