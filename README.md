@@ -19,8 +19,8 @@ Its sole section is `[emoji]` and contains definitions of custom emoji
 codes in the format of *emojicode = emoji*, where *emojicode* is a
 sequence of supported ASCII characters (letters, numbers, `_`, `+`, and
 `-`) and *emoji* a sequence of Unicode characters. For example,
-`fix = 🐛` defines the emoji code `fix` that can be used to insert `🐛`
-in a commit message.
+`fix = 🐛` defines the emoji code `fix` that can be used to easily add
+`🐛` to a commit message.
 
 See [.fancyconfig](.fancyconfig) of this repository for an example
 configuration.
