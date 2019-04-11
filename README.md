@@ -7,6 +7,7 @@ since each emoji code gets translated to Unicode, your commit messages
 will look great in any Unicode-aware environment.
 
 ## Installation
+Installation is simple:
 1. Copy [commit-msg](commit-msg) to your hooks directory (by default,
 the `.git/hooks` directory of your repository).
 2. Add a `.fancyconfig` file at the root of your repository containing
