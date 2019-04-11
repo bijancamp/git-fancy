@@ -8,7 +8,7 @@ will look great in any Unicode-aware environment.
 
 ## Installation
 1. Copy [commit-msg](commit-msg) to your hooks directory (by default,
-the `.git/hooks` directory of a repository).
+the `.git/hooks` directory of your repository).
 2. Add a `.fancyconfig` file at the root of your repository containing
 definitions of emoji codes as described in
 [Configuration](#configuration).
