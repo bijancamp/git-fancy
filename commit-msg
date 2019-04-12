@@ -13,7 +13,7 @@ def get_emoji(code: str) -> str:
 
 
 def replace_emoji_sequences(text: str) -> str:
-    return re.sub(r':(?P<code>[a-zA-Z0-9_+-]+):',
+    return re.sub(r':(?P<code>[a-zA-Z0-9-]+):',
                   lambda match: get_emoji(match.group('code')),
                   text)
 
