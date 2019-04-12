@@ -16,8 +16,8 @@ definitions of emoji codes as described in
 
 ## Configuration
 You define a project's emoji codes via a `.fancyconfig` file located at
-the root of a Git repository. The format of `.fancyconfig` is the same
-as that of a
+the root of the repository. The format of `.fancyconfig` is the same as
+that of a
 [Git configuration file](https://www.git-scm.com/docs/git-config#_configuration_file).
 Its sole section is `[emoji]` and contains definitions of custom emoji
 codes in the format of *emojicode = emoji*, where *emojicode* is a
