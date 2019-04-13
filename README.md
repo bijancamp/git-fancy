@@ -20,10 +20,11 @@ the root of the repository. The format of `.fancyconfig` is the same as
 that of a
 [Git configuration file](https://www.git-scm.com/docs/git-config#_configuration_file).
 Its sole section is `[emoji]` and contains definitions of custom emoji
-codes in the format of *emojicode = emoji*, where *emojicode* is a
-supported sequence of characters and *emoji* a sequence of Unicode
-characters. For example, `fix = 🐛` defines the emoji code `fix` that
-can be used to easily add `🐛` to a commit message.
+codes in the format of *emojicode = emoji*, where *emojicode* is a valid
+sequence of ASCII characters (begins with a letter with subsequent
+characters being letters, numbers or hyphens) and *emoji* a sequence of
+Unicode characters. For example, `fix = 🐛` defines the emoji code `fix`
+that can be used to easily add `🐛` to a commit message.
 
 See [.fancyconfig](.fancyconfig) of this repository for an example
 configuration.
