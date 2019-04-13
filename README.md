@@ -23,14 +23,15 @@ definitions of emoji codes as described in [Configuration].
 
 ## Configuration
 You define a project's emoji codes via a `.fancyconfig` file located at
-the root of the repository. The format of `.fancyconfig` is the same as
-that of a [Git configuration file]. Its sole section is `[emoji]` and
-contains definitions of custom emoji codes in the format of
-*emojicode = emoji*, where *emojicode* is a valid sequence of ASCII
-characters (begins with a letter with subsequent characters being
-letters, numbers or hyphens) and *emoji* a sequence of Unicode
-characters. For example, `fix = 🐛` defines the emoji code `fix` that
-can be used to easily add `🐛` to a commit message.
+the root of the repository.
+
+The format of `.fancyconfig` is the same as that of a [Git configuration
+file]. Its sole section is `[emoji]` and contains definitions of custom
+emoji codes in the format of *emojicode = emoji*, where *emojicode* is a
+valid sequence of ASCII characters (begins with a letter with subsequent
+characters being letters, numbers or hyphens) and *emoji* a sequence of
+Unicode characters. For example, `fix = 🐛` defines the emoji code `fix`
+that can be used to easily add `🐛` to a commit message.
 
 See [.fancyconfig] of this repository for an example configuration.
 
