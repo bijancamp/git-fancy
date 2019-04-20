@@ -10,7 +10,7 @@ Unicode-aware environment.
 
 
 ## Installation
-Installation is simple:
+Using git-fancy requires Python 3.6+ and the following setup:
 1. Copy [commit-msg] to your hooks directory (by default, the
 `.git/hooks` directory of your repository).
 2. Add a `.fancyconfig` file at the root of your repository containing
