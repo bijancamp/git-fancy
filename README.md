@@ -38,3 +38,23 @@ See [.fancyconfig] of this repository for an example configuration.
 <!-- Links -->
 [Git configuration file]: https://www.git-scm.com/docs/git-config#_configuration_file
 [.fancyconfig]: .fancyconfig
+
+## Usage
+To use custom emoji codes in your commit messages, type `:emojicode:` in
+a commit message, where `emojicode` is the name of one of the variables
+[you've defined]. For example, if you've defined the emoji code `style`
+to be `💎`, then you can type
+```
+:style: Rename function
+```
+to use
+```
+💎 Rename function
+```
+as the commit message.
+
+You can write your emoji-coded commit messages from the command line or
+your favorite editor!
+
+<!-- Links -->
+[you've defined]: #configuration
