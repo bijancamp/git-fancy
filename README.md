@@ -13,7 +13,8 @@ Unicode-aware environment.
 git-fancy requires Python 3.6+ and the following setup:
 1. Copy [commit-msg] to your hooks directory (by default, the
 `.git/hooks` directory of your repository).
-2. Add a `.fancyconfig` file at the root of your repository containing
+2. Ensure you have adequate permissions to execute `commit-msg`.
+3. Add a `.fancyconfig` file at the root of your repository containing
 definitions of emoji codes as described in [Configuration].
 
 <!-- Links -->
