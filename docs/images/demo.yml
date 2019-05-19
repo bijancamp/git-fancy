@@ -107,8 +107,6 @@ records:
   - delay: 25
     content: '-'
   - delay: 25
-    content: a
-  - delay: 25
     content: m
   - delay: 25
     content: ' '
@@ -169,7 +167,7 @@ records:
   - delay: 150
     content: "\r\n"
   - delay: 148
-    content: "[master 9a088f9] ✨  Add git-fancy hook\r\n 1 file changed, 24 insertions(+)\r\n create mode 100755 commit-msg\r\n\e[36mgo-gitter\e[0m in \e[34mgit-fancy\e[0m $ "
+    content: "[master 4c6c1be] ✨  Add git-fancy hook\r\n 1 file changed, 24 insertions(+)\r\n create mode 100755 commit-msg\r\n\e[36mgo-gitter\e[0m in \e[34mgit-fancy\e[0m $ "
   - delay: 1032
     content: g
   - delay: 25
@@ -224,8 +222,6 @@ records:
     content: ' '
   - delay: 25
     content: '-'
-  - delay: 25
-    content: a
   - delay: 25
     content: m
   - delay: 25
@@ -285,4 +281,4 @@ records:
   - delay: 150
     content: "\r\n"
   - delay: 148
-    content: "[master a3c9ae7] \U0001F9F9  Add .fancyconfig\r\n 1 file changed, 7 insertions(+)\r\n create mode 100644 .fancyconfig\r\n\e[36mgo-gitter\e[0m in \e[34mgit-fancy\e[0m $ "
+    content: "[master 0f947aa] \U0001F9F9  Add .fancyconfig\r\n 1 file changed, 7 insertions(+)\r\n create mode 100644 .fancyconfig\r\n\e[36mgo-gitter\e[0m in \e[34mgit-fancy\e[0m $ "
