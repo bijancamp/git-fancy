@@ -5,7 +5,7 @@ compose your emoji-charged commit messages, and since each emoji code
 gets translated to Unicode, your commit messages will look great in any
 Unicode-aware environment.
 
-<img src="docs/images/demo.gif" alt="Demo of git-fancy" width="641" height="222">
+<img src="docs/images/demo.gif" alt="Demo of git-fancy" width="641">
 
 <!-- Links -->
 [commit-msg hook]: https://git-scm.com/docs/githooks#_commit_msg
